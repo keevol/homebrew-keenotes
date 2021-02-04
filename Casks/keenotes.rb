@@ -1,6 +1,6 @@
 cask "keenotes" do
   version "1.2.2"
-  sha256 "14617fe50edcdaf3d3fbfc06bb456e6d2e301ec7378189a1266d8517027b1fd5"
+  sha256 "e3731d376958ba68e927f876b27ade5a9d049461d59af2c4c32dc0df6db12a75"
 
   url "https://github.com/keevol/keenotes-desktop/releases/download/v1.2.2/KeeNotes.Desktop-1.2.2.dmg"
   # appcast "https://app-updates.agilebits.com/product_history/OPM#{version.major}"
