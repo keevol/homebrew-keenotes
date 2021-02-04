@@ -9,7 +9,6 @@ cask "keenotes" do
   homepage "https://github.com/keevol/keenotes-desktop"
 
   auto_updates true
-  # conflicts_with cask: "1password-beta"
   # depends_on macos: ">= :high_sierra"
 
   app "KeeNotes Desktop.app"
@@ -18,15 +17,7 @@ cask "keenotes" do
   postflight do
     # remove quarantine against the application: `sudo xattr -d com.apple.quarantine /Applications/KeeNotes\ Desktop.app`
     system_command '/usr/bin/xattr',
-                   args: ['-d com.apple.quarantine', "#{appdir}/KeeNotes Desktop.app"],
+                   args: ['-d','com.apple.quarantine', "#{appdir}/KeeNotes Desktop.app"],
                    sudo: true
   end
-  
-  # zap trash: [
-  #   "~/Library/Application Scripts/*.agilebits.onepassword*",
-  #   "~/Library/Containers/*.agilebits.onepassword*",
-  #   "~/Library/Group Containers/2BUA8C4S2C.com.agilebits",
-  #   "~/Library/Logs/1Password",
-  #   "~/Library/Preferences/com.agilebits.onepassword*",
-  # ]
 end
