@@ -5,7 +5,7 @@
 
 # this is for cli install
 
-class KeeNotes < Formula
+class Keenotes < Formula
   desc "A Privacy-First Personal Knowledgebase Tool "
   homepage "https://github.com/keevol/keenotes-desktop"
   url "https://github.com/keevol/keenotes-desktop/releases/download/v1.2.2/KeeNotes.Desktop-1.2.2.dmg"
